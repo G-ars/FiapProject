@@ -1,0 +1,41 @@
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(232 232 232);
+    border-bottom: 1px solid #0000000f;
+    box-shadow: 0px 1px 8px 0px grey;
+}
+
+.logo{
+    width: 75px;
+}
+
+.icon__header{
+    padding: 0.4em;
+    font-size: xx-large;
+    color: #676767b5;
+    transition: 0.9s;
+    margin-right: 10px;
+}
+
+.icon__header:hover{
+    transition: 0.9s;
+    transform: scale(1.05);
+    color: #42BC01;
+    background-color: #8080804a;
+    padding: 0.4em;
+    border-radius: 100%;
+} 
+
+.div__profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.user__header{
+    margin-left: 10px;
+}
+
