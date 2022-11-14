@@ -1,5 +1,5 @@
 .sidebar{
-    float: left;
+    /* float: left; */
     min-width: 320px;
     background-color: #9ed597;
     min-height: 90vh;
@@ -80,4 +80,15 @@ div[class*=box] {
 .btn-one:hover::after {
 	opacity: 0;	
 	transform: scale(0.1, 1);
+}
+
+.btn{
+    display: flex;
+    justify-content: initial;
+    align-items: center;
+}
+
+svg{
+    font-size: 2em;
+    padding-right: 2em;
 }
