@@ -1,13 +1,20 @@
 import './App.css';
 import Header from './components/Header';
-import Container from './components/Container';
-
+import Sidebar from './components/Sidebar';
+import Feed from './components/Feed';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Container />
+      <div className='home__grid'>
+        <div className='grid__one'>
+          <Sidebar />
+        </div>
+        <div className='grid__two' >
+          <Feed />
+        </div>
+      </div>
     </div>
   );
 }
