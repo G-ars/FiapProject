@@ -68,3 +68,9 @@ input:focus
 .btn__submit{
     display: none;
 }
+
+@media (max-width: 500px){
+    .postSender__form{
+        flex-direction: column;
+    }
+}

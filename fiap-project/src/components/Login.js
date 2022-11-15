@@ -31,6 +31,7 @@ function Login() {
                 <img
                     src={banner}
                     alt="Logo"
+                    className='banner'
                 />
             </div>
 

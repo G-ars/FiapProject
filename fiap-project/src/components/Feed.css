@@ -3,6 +3,7 @@
     padding: 1em;
     border-radius: 11px;
     box-shadow: 2px 2px 7px 3px #80808036;
+    margin: 10px;
 }
 
 .title__feed{
@@ -29,4 +30,5 @@
     font-size: 2em;
     color: white;
     margin-left: 1em;
+    margin-top: 15px;
 }
