@@ -6,6 +6,7 @@ import './Container.css';
 function Container() {
 
     return (
+        
         <div className='home__grid'>
             <div className='grid__one'>
                 <Sidebar />
