@@ -4,6 +4,7 @@ import PostSender from './PostSender'
 import Post from './Post'
 
 function Feed() {
+
   return (
     <>
       <div className='feed'>

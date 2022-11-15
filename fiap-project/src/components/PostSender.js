@@ -4,38 +4,39 @@ import { FaVideo } from 'react-icons/fa';
 import { FaRegImages } from 'react-icons/fa';
 import { FaRegGrinAlt } from 'react-icons/fa';
 
-// import db from './firebase'
-// import firebase from './firebase'
-// import { useStateValue } from './StateProvider'
+import db from './firebase'
+import firebase from './firebase'
+import { useStateValue } from './StateProvider'
 
 function PostSender() {
+    return <p>Post sender</p>
 
-    // const [{ user }, dispatch] = useStateValue();
+    const [{ user }, dispatch] = useStateValue();
     
-    // const [input, setInput] = useState('')
+    const [input, setInput] = useState('')
 
-    // const [image, setImage] = useState('')
+    const [image, setImage] = useState('')
 
-    // const handleSubmit = (e) => {
-    //     e.preventDefault();
+    const handleSubmit = (e) => {
+        e.preventDefault();
 
-    //     db.collection('posts').add({
-    //         message: input,
-    //         timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-    //         profilePic: user.photoURL,
-    //         username: user.displayName,
-    //         image: image
-    //     })
+        db.collection('posts').add({
+            message: input,
+            timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+            profilePic: user.photoURL,
+            username: user.displayName,
+            image: image
+        })
 
-    //     setInput('')
-    //     setImage('')
-    // }
+        setInput('')
+        setImage('')
+    }
 
     return (
         <div className='postSender'>
             <div>
                 <form>
-                    {/* <div className='postSender__form'>
+                    <div className='postSender__form'>
                         <div>
                             <img src = {user.photoURL} alt='Image'/>
                         </div>
@@ -57,7 +58,7 @@ function PostSender() {
 
                             <button onClick={handleSubmit} className="btn__submit" type='submit'>Enviar</button>
                         </div>
-                    </div> */}
+                    </div>
 
                     <div className='icons__post'>
                         <div className='icon__div'>

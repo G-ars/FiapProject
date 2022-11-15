@@ -1,20 +1,24 @@
 import './App.css';
 import Header from './components/Header';
-import Sidebar from './components/Sidebar';
-import Feed from './components/Feed';
+import Container from './components/Container';
+import Login from './components/Login';
+import { useStateValue } from './components/StateProvider';
 
 function App() {
+
+  const [state, dispatch] = useStateValue();
+  console.log('state', state);
+
   return (
-    <div className="App">
-      <Header />
-      <div className='home__grid'>
-        <div className='grid__one'>
-          <Sidebar />
-        </div>
-        <div className='grid__two' >
-          <Feed />
-        </div>
-      </div>
+    <div className="app">
+      {!state.user ? (<Login />) : (
+        <>
+          <Header />
+          <Container />
+        </>
+      )}
+
+
     </div>
   );
 }

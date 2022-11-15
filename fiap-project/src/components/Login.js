@@ -1,45 +1,45 @@
 import React from 'react'
 import './Login.css'
-import { auth, provider} from './firebase'
+import { auth, provider } from './firebase'
 import { useStateValue } from './StateProvider';
 import { actionTypes } from './reducer'
+import logo from '../assets/logo.png';
+
 
 function Login() {
+
 
     const [state, dispatch] = useStateValue();
 
     const signIn = () => {
         auth.signInWithPopup(provider)
-        .then(result => {
+            .then(result => {
 
-            dispatch({
-                type: actionTypes.SET_USER,
-                user: result.user
+                dispatch({
+                    type: actionTypes.SET_USER,
+                    user: result.user
+                })
+                console.log(result.user)
             })
-            console.log(result.user)
-        })
-        .catch((error) => alert(error.message))
+            .catch((error) => alert(error.message))
     }
 
     return (
-        <div className = "login">
-            <div className = "login__logo">
-                <img 
-                    src = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/100px-Facebook_f_logo_%282019%29.svg.png"
-                    alt = ""
+        <div className="login">
+            <div className="login__container">
+                <img
+                    src={logo}
+                    alt="Logo"
                 />
-                
-                <img 
-                    className = "logo__name"
-                    src = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Facebook_Logo_%282019%29.svg/196px-Facebook_Logo_%282019%29.svg.png"
-                    alt = ""
-                />
-                </div>
-            
-            <button className = "login__button" onClick = {signIn} type = "submit">
+
+                <h3>Projeto Fiap</h3>
+
+            <button className="login__button" onClick={signIn} type="submit">
                 Sign In
             </button>
+            </div>
         </div>
+    
     )
 }
 

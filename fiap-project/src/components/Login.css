@@ -1,33 +1,33 @@
 .login {
-    display: grid;
-    place-content: center;
-    height: 100vh;
-  }
-  
-  .login > div > img {
-    object-fit: contain;
-    height: 70px;
-  }
-  
-  .login__logo > .logo__name {
-    margin-top: 50px;
-    height: 30px;
-  }
-  
-  .login > div {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .login > .login__button {
-    width: 400px;
-    background-color: #2e81f4;
-    color: #eff2f5;
-    font-weight: 800;
-    margin-top: 400px;
-  }
-  
-  .login > .login__button:hover {
-    background-color: white;
-    color: #2e81f4;
-  }
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+.login>div>img {
+  object-fit: contain;
+  height: 70px;
+}
+
+.login__container {
+  display: flex;
+  background-color: white;
+  height: 400px;
+  width: 400px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px 3px #8080806b;
+}
+
+.login__button {
+  padding: 1em;
+  width: 70%;
+  border-radius: 6px;
+  border: 0px;
+  box-shadow: 2px 2px 2px 1px #5656568a;
+  background: #565656;
+  color: white;
+  text-transform: uppercase;
+}
