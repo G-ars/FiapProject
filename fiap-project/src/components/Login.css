@@ -43,13 +43,13 @@
 .login__section {
   display: flex;
   justify-content: space-between;
-  background: #276651b8;
+  background: #113833;
 }
 
 .login__title {
-  font-size: 1.5em;
+  font-size: 1.3em;
   color: white;
-  margin: 2em;
+  margin: 1.5em;
   text-align: center;
   font-family: 'Monoton', cursive;
   font-weight: 100;
@@ -73,7 +73,6 @@
 @media (max-width: 800px) {
   .login__section {
     display: flex;
-    background: #276651b8;
     flex-direction: column-reverse;
     justify-content: center;
   }

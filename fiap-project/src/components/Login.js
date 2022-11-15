@@ -37,7 +37,7 @@ function Login() {
 
             <div>
                 <div className='login__title'>
-                    <h1>O <span>Recycle</span> te conecta com pessoas que querem salvar o mundo, assim como você!</h1>
+                    <h1>O <span>TrashSolution</span> te conecta com pessoas que querem salvar o mundo, assim como você!</h1>
                 </div>
 
                 <div className="login">
