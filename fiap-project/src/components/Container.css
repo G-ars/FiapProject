@@ -9,3 +9,11 @@
 
 .grid__one { grid-area: 1 / 1 / 6 / 2; }
 .grid__two { grid-area: 1 / 2 / 6 / 5; margin-top: 5%;}
+
+
+@media (max-width: 768px) {
+    .home__grid {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

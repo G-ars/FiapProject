@@ -5,3 +5,28 @@
     box-shadow: 2px 2px 7px 3px #80808036;
 }
 
+.title__feed{
+    text-align: center;
+    padding: 5em 1em;
+    margin: 10px;
+    background-attachment: fixed;
+    background: #565656;
+    border-radius: 1em;
+}
+
+.title__feed h1{
+    color: white;
+}
+
+.title__feed p{
+    margin-top: 35px;
+    font-size: 22px;
+    color: #8eff52;
+    font-weight: bold;
+}
+
+.recycle__icon{
+    font-size: 2em;
+    color: white;
+    margin-left: 1em;
+}

@@ -4,10 +4,10 @@ import { auth, provider } from './firebase'
 import { useStateValue } from './StateProvider';
 import { actionTypes } from './reducer'
 import logo from '../assets/logo.png';
+import banner from '../assets/banner-login.jpg';
 
 
 function Login() {
-
 
     const [state, dispatch] = useStateValue();
 
@@ -25,21 +25,33 @@ function Login() {
     }
 
     return (
-        <div className="login">
-            <div className="login__container">
+        <div className='login__section'>
+
+            <div>
                 <img
-                    src={logo}
+                    src={banner}
                     alt="Logo"
                 />
+            </div>
 
-                <h3>Projeto Fiap</h3>
+            <div>
+                <div className='login__title'>
+                    <h1>O <span>Recycle</span> te conecta com pessoas que querem salvar o mundo, assim como você!</h1>
+                </div>
 
-            <button className="login__button" onClick={signIn} type="submit">
-                Sign In
-            </button>
+                <div className="login">
+                    <div className="login__container">
+                        <img
+                            src={logo}
+                            alt="Logo"
+                        />
+                        <button className="login__button" onClick={signIn} type="submit">
+                            Sign In
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
-    
     )
 }
 

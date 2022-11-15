@@ -1,24 +1,23 @@
 .login {
   display: grid;
   place-content: center;
-  height: 100vh;
+  height: 55vh;
 }
 
 .login>div>img {
-  object-fit: contain;
-  height: 70px;
+  width: 130px;
 }
 
 .login__container {
   display: flex;
-  background-color: white;
-  height: 400px;
-  width: 400px;
+  background-color: #ffffffb8;
+  height: 250px;
+  width: 300px;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   border-radius: 10px;
-  box-shadow: 3px 3px 8px 3px #8080806b;
+  box-shadow: 1px 2px 7px 4px #fefefe66;
 }
 
 .login__button {
@@ -30,4 +29,39 @@
   background: #565656;
   color: white;
   text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.8s;
+
+}
+
+.login__button:hover {
+  transition: 0.8s;
+  opacity: 0.8;
+  transform: scale(1.01);
+}
+
+.login__section {
+  display: flex;
+  justify-content: space-between;
+  background: #276651b8;
+}
+
+.login__title {
+  font-size: 1.5em;
+  color: white;
+  margin: 2em;
+  text-align: center;
+  font-family: 'Monoton', cursive;
+  font-weight: 100;
+}
+
+.login__title h1{
+  font-weight: 100;
+
+}
+
+.login__title span{
+  color: #05d405;
+  font-weight: 100;
+
 }
