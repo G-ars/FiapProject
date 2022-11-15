@@ -4,23 +4,26 @@ import { FaRegThumbsUp } from 'react-icons/fa';
 import { FaRegCommentAlt } from 'react-icons/fa';
 import { FaShare } from 'react-icons/fa';
 import { FaUserCircle } from 'react-icons/fa';
+import { Avatar } from '@material-ui/core'
 
 
-
-function Post() {
+function Post({ profilePic, image, username, timestamp, message}) {
     return (
         <div className='post'>
             <div className='post__container'>
                 <div className='post__user'>
-                    <FaUserCircle className='icon__user'/>
+                <Avatar
+                    src = {profilePic}
+                    className = "post__avatar"
+                />
                 </div>
                 <div className='post__info'>
-                    <h3>Username</h3>
-                    <p>Timestamp</p>
+                    <h3>{username}</h3>
+                    <p>{new Date(timestamp?.toDate()).toUTCString()}</p>
                 </div>
             </div>
             <div className='post__content'>
-                <p>Mensagem</p>
+                <p>{message}</p>
                 <div className='post__image'>
                     <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png' alt='Image' />
                 </div>

@@ -3,10 +3,10 @@ import './Header.css'
 import logo from '../assets/logo.png';
 import { FaHome } from 'react-icons/fa';
 import { FaStore } from 'react-icons/fa';
-import { FaUserAlt } from 'react-icons/fa';
-
+import { useStateValue } from './StateProvider'
 
 export default function Header() {
+    const [{ user }, dispatch] = useStateValue();
     return (
         <div className="header">
             <div className="logo">
@@ -18,10 +18,10 @@ export default function Header() {
             </div>
             <div className='div__profile'>
                 <div>
-                    <FaUserAlt className='icon__header' />
+                    <img src={user.photoURL} alt='Image' className='post__avatar' />
                 </div>
                 <div className='user__header'>
-                    <span>Username</span>
+                    <span>{user.displayName}</span>
                 </div>
             </div>
         </div>

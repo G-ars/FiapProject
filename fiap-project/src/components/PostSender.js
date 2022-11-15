@@ -9,8 +9,7 @@ import firebase from './firebase'
 import { useStateValue } from './StateProvider'
 
 function PostSender() {
-    return <p>Post sender</p>
-
+  
     const [{ user }, dispatch] = useStateValue();
     
     const [input, setInput] = useState('')
@@ -38,7 +37,7 @@ function PostSender() {
                 <form>
                     <div className='postSender__form'>
                         <div>
-                            <img src = {user.photoURL} alt='Image'/>
+                            <img src = {user.photoURL} alt='Image' className='post__avatar'/>
                         </div>
 
                         <div>
