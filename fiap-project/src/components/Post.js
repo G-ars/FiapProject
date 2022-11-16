@@ -25,7 +25,7 @@ function Post({ profilePic, image, username, timestamp, message}) {
             <div className='post__content'>
                 <p>{message}</p>
                 <div className='post__image'>
-                    <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png' alt='Image' />
+                    <img src={image} alt='Image' />
                 </div>
 
                 <div className='post__container--options'>

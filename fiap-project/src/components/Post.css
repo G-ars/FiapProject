@@ -8,6 +8,11 @@
 
 .post__image img{
     max-width: 100%;
+    text-align: center;
+}
+
+.post__image{
+    text-align: center;
 }
 
 .post__container{
