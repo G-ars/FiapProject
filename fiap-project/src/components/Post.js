@@ -1,21 +1,19 @@
 import React from 'react'
 import './Post.css'
-import { FaRegThumbsUp } from 'react-icons/fa';
-import { FaRegCommentAlt } from 'react-icons/fa';
-import { FaShare } from 'react-icons/fa';
-import { FaUserCircle } from 'react-icons/fa';
 import { Avatar } from '@material-ui/core'
+import { FaWhatsappSquare } from 'react-icons/fa';
 
 
-function Post({ profilePic, image, username, timestamp, message}) {
+
+function Post({ profilePic, image, username, timestamp, message, contact }) {
     return (
         <div className='post'>
             <div className='post__container'>
                 <div className='post__user'>
-                <Avatar
-                    src = {profilePic}
-                    className = "post__avatar"
-                />
+                    <Avatar
+                        src={profilePic}
+                        className="post__avatar"
+                    />
                 </div>
                 <div className='post__info'>
                     <h3>{username}</h3>
@@ -28,24 +26,11 @@ function Post({ profilePic, image, username, timestamp, message}) {
                     <img src={image} alt='Image' />
                 </div>
 
+
+
                 <div className='post__container--options'>
-                    <div className='post__options'>
-                        <FaRegThumbsUp />
-                        <p>Like</p>
-                    </div>
-
-                    <div className='post__options'>
-                        <FaRegCommentAlt />
-                        <p>Comment</p>
-                    </div>
-
-                    <div className='post__options'>
-                        <FaShare />
-                        <p>Share</p>
-                    </div>
-
-                    <div className='post__options'>
-                        <FaUserCircle />
+                    <div className='post__image'>
+                        <p><a href="https://api.whatsapp.com/send?phone=55" ><FaWhatsappSquare /> Entre em contato conosco via Whatsapp</a></p>
                     </div>
                 </div>
             </div>

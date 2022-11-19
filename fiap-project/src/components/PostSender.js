@@ -1,11 +1,9 @@
 import React, { useState } from 'react'
 import './PostSender.css'
-import { FaVideo } from 'react-icons/fa';
-import { FaRegImages } from 'react-icons/fa';
-import { FaRegGrinAlt } from 'react-icons/fa';
 import { useStateValue } from './StateProvider'
 import db from './firebase'
 import firebase from 'firebase'
+
 
 function PostSender() {
 
@@ -15,6 +13,9 @@ function PostSender() {
 
     const [image, setImage] = useState('')
 
+    const [contact, setContact] = useState('')
+
+
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -23,11 +24,14 @@ function PostSender() {
             timestamp: firebase.firestore.FieldValue.serverTimestamp(),
             profilePic: user.photoURL,
             username: user.displayName,
-            image: image
+            image: image,
+            contact: contact
         })
 
         setInput('')
         setImage('')
+        setContact('')
+
     }
 
     return (
@@ -46,39 +50,30 @@ function PostSender() {
                                     value={input}
                                     onChange={(e) => setInput(e.target.value)}
                                     className='postSender__input'
-                                    placeholder={`What's on your mind, ${user.displayName} ?`}
+                                    placeholder={`Faça seu post, ${user.displayName}`}
                                 />
 
                                 <input
                                     value={image}
                                     onChange={(e) => setImage(e.target.value)}
                                     className='postSender__input'
-                                    placeholder='Imagem URL (opcional)'
+                                    placeholder='URL da Imagem'
                                 />
+
+                                <input
+                                    value={contact}
+                                    onChange={(e) => setContact(e.target.value)}
+                                    className='postSender__input'
+                                    placeholder='wtp'
+                                />
+
 
                                 <button onClick={handleSubmit} className="btn__submit" type='submit'>Enviar</button>
                             </div>
                         </div>
 
-                        <div className='icons__post'>
-                            <div className='icon__div'>
-                                <FaVideo style={{ color: 'red' }} />
-                                <h3>Live video</h3>
-                            </div>
-
-                            <div className='icon__div'>
-                                <FaRegImages style={{ color: 'green' }} />
-                                <h3>Insira sua imagem</h3>
-                            </div>
-
-                            <div className='icon__div'>
-                                <FaRegGrinAlt style={{ color: 'yellow' }} />
-                                <h3>Como esta se sentindo hoje?</h3>
-                            </div>
-
-                        </div>
-
                     </form>
+
                 </div>
             </div>
         </>

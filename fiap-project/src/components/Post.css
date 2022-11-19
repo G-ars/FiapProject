@@ -3,7 +3,8 @@
     padding: 1em;
     border-radius: 11px;
     box-shadow: 2px 2px 7px 3px #80808036;
-    margin: 2em 0px;
+    margin: 10px;
+    margin-bottom: 2em;
 }
 
 .post__image img{
