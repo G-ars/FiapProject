@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './PostSender.css'
 import { useStateValue } from './StateProvider'
 import db from './firebase'
 import firebase from 'firebase'
-
+import userImg from '../assets/user.png'
+import InputMask from 'react-input-mask';
 
 function PostSender() {
 
@@ -42,7 +43,10 @@ function PostSender() {
                     <form>
                         <div className='postSender__form'>
                             <div>
-                                <img src={user.photoURL} alt='Image' className='post__avatar' />
+                                <img src={user.photoURL} alt='Image' className='post__avatar' onError={({ currentTarget }) => {
+                                    currentTarget.onerror = null; // prevents looping
+                                    currentTarget.src = userImg;
+                                }} />
                             </div>
 
                             <div>
@@ -60,11 +64,13 @@ function PostSender() {
                                     placeholder='URL da Imagem'
                                 />
 
-                                <input
+                                <InputMask 
+                                    mask="(99)99999-9999"
                                     value={contact}
+                                    type="tel"
                                     onChange={(e) => setContact(e.target.value)}
                                     className='postSender__input'
-                                    placeholder='wtp'
+                                    placeholder='(DDD) 9999-9999'
                                 />
 
 

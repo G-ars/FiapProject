@@ -9,36 +9,36 @@ import { FaRegFileAlt } from 'react-icons/fa';
 function sidebar() {
     return (
         <aside className='sidebar'>
-            <div class="box-1">
-                <div class="btn btn-one">
+            <div className="box-1">
+                <div className="btn btn-one">
                     <FaHome />
                     <span>Home</span>
                 </div>
             </div>
 
-            <div class="box-1">
-                <div class="btn btn-one">
+            <div className="box-1">
+                <div className="btn btn-one">
                     <FaBuffer />
                     <span>My Posts</span>
                 </div>
             </div>
 
-            <div class="box-1">
-                <div class="btn btn-one">
+            <div className="box-1">
+                <div className="btn btn-one">
                     <FaRegBookmark />
                     <span>Favorited Posts</span>
                 </div>
             </div>
 
-            <div class="box-1">
-                <div class="btn btn-one">
+            <div className="box-1">
+                <div className="btn btn-one">
                     <FaRegComments />
                     <span>My contact</span>
                 </div>
             </div>
 
-            <div class="box-1">
-                <div class="btn btn-one">
+            <div className="box-1">
+                <div className="btn btn-one">
                     <FaRegFileAlt />
                     <span>About</span>
                 </div>

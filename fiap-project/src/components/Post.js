@@ -22,15 +22,17 @@ function Post({ profilePic, image, username, timestamp, message, contact }) {
             </div>
             <div className='post__content'>
                 <p>{message}</p>
-                <div className='post__image'>
-                    <img src={image} alt='Image' />
-                </div>
 
+                {image && image.toString().length > 10 ?
+                    <div className='post__image'>
+                        <img src={image} alt='Image' />
+                    </div> : false   
+                }
 
 
                 <div className='post__container--options'>
                     <div className='post__image'>
-                        <p><a href="https://api.whatsapp.com/send?phone=55" ><FaWhatsappSquare /> Entre em contato conosco via Whatsapp</a></p>
+                        <p><a href={`https://web.whatsapp.com/send?phone=55${(contact || '').toString().replace(/\D/g, '')}`} title='Whatsapp'>{contact}</a></p>
                     </div>
                 </div>
             </div>

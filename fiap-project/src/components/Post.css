@@ -49,3 +49,18 @@
     max-width: 45px;
     border-radius: 100%;
 }
+
+.p__contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #42bc01b3;
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+    margin: 1em;
+}
+
+.wpp_contact{
+    margin-right: 1em;
+}

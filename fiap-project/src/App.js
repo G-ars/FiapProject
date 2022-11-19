@@ -2,7 +2,10 @@ import './App.css';
 import Header from './components/Header';
 import Container from './components/Container';
 import Login from './components/Login';
+import GetApi from './components/GetApi';
+
 import { useStateValue } from './components/StateProvider';
+
 
 function App() {
 
@@ -15,6 +18,8 @@ function App() {
         <>
           <Header />
           <Container />
+          <GetApi />
+
         </>
       )}
 
