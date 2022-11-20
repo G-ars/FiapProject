@@ -49,11 +49,11 @@ function PostSender() {
                                 }} />
                             </div>
 
-                            <div>
+                            <div className='txtcenter'>
                                 <input
                                     value={input}
                                     onChange={(e) => setInput(e.target.value)}
-                                    className='postSender__input'
+                                    className='postSender__input text__input--custom'
                                     placeholder={`Faça seu post, ${user.displayName}`}
                                 />
 

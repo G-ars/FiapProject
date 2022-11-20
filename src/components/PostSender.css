@@ -1,4 +1,4 @@
-.postSender__form{
+.postSender__form {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,7 +7,7 @@
     border-radius: 5px;
 }
 
-.postSender__form input{
+.postSender__form input {
     padding: 15px;
     margin: 10px 15px;
     text-align: center;
@@ -19,29 +19,29 @@
 
 }
 
-.icons__post{
+.icons__post {
     display: flex;
     justify-content: space-around;
 }
 
-.icon__div{
+.icon__div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.icon__div h3{
+.icon__div h3 {
     font-size: 15px;
     font-weight: 400;
     padding: 10px;
 }
 
-.icon__user{
+.icon__user {
     font-size: 2.5em;
     color: #676767b5;
 }
 
-.btn__submit{
+.btn__submit {
     padding: 14px;
     border: 0px;
     border-radius: 10px;
@@ -52,13 +52,12 @@
 
 }
 
-.btn__submit:hover{
+.btn__submit:hover {
     transition: .4s;
     opacity: 0.8;
 }
 
-input:focus
-{
+input:focus {
     border: 1px solid #42bc017d;
     box-shadow: 0 0 3px #42bc017d;
     outline-offset: 0px;
@@ -66,8 +65,20 @@ input:focus
 }
 
 
-@media (max-width: 500px){
-    .postSender__form{
+@media (max-width: 500px) {
+    .postSender__form {
         flex-direction: column;
     }
+
+    .postSender__input {
+        width: 82% !important;
+    }
+}
+
+.text__input--custom {
+    width: 82% !important;
+}
+
+.txtcenter{
+    text-align: center;
 }

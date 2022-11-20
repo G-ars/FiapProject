@@ -31,8 +31,9 @@ function Post({ profilePic, image, username, timestamp, message, contact }) {
 
 
                 <div className='post__container--options'>
+                    <h3>Entre em contato:</h3>
                     <div className='post__image'>
-                        <p><a href={`https://web.whatsapp.com/send?phone=55${(contact || '').toString().replace(/\D/g, '')}`} title='Whatsapp'>{contact}</a></p>
+                    <a href={`https://web.whatsapp.com/send?phone=55${(contact || '').toString().replace(/\D/g, '')}`} className="link__wpp" title='Whatsapp'><p className='p__contact'><FaWhatsappSquare className='wpp_contact'/>{contact}</p></a>
                     </div>
                 </div>
             </div>
