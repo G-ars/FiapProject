@@ -18,6 +18,7 @@ export default function Header() {
                 }} />
             </div>
             <div>
+                
                 <FaHome className='icon__header' />
                 <FaStore className='icon__header' />
             </div>
