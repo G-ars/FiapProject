@@ -7,7 +7,7 @@ function GetApi() {
 
         useEffect(() => {
 
-            axios.get("https://covid19-brazil-api.now.sh/api/report/v1/brazil")
+            axios.get("https://covid-api.mmediagroup.fr/v1/cases")
 
             .then((res) => {
                 console.log(res.data)
