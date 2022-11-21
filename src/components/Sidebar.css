@@ -69,6 +69,7 @@ div[class*=box] {
 	height: 100%;
 	z-index: 1;
 	transition: all 0.3s;
+	
 }
 .btn-one:hover::after {
 	opacity: 0;	
@@ -84,4 +85,8 @@ div[class*=box] {
 .sidebar svg{
     font-size: 2em;
     padding-right: 2em;
+}
+
+.link__btn{
+	    z-index: 9999;
 }

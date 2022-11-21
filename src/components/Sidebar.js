@@ -40,8 +40,8 @@ function sidebar() {
             <div className="box-1">
                 <div className="btn btn-one">
                     <FaRegFileAlt />
-                    <span>About</span>
-                </div>
+                    <a className='link__btn' href="https://github.com/G-ars/FiapProject" target='_blank'>GitHub</a>
+                </div> 
             </div>
         </aside>
     )
