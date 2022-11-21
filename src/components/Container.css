@@ -4,12 +4,12 @@
     grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    gap: 130px;
+    gap: 50px;
 }
 
 .grid__one { grid-area: 1 / 1 / 6 / 2; }
 .grid__two { grid-area: 1 / 2 / 6 / 5; margin-top: 5%;}
-
+.grid__three{    grid-area: auto;}
 
 @media (max-width: 768px) {
     .home__grid {

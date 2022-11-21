@@ -1,0 +1,78 @@
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  border: 5px solid black;
+  border-bottom-color: #7e7e7e33;
+  border-left-color: #7e7e7e33;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  display: block;
+  color: transparent;
+  animation: spin 2s linear infinite;
+  margin-top: 50%;
+  margin-inline: auto;
+}
+
+.news {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  margin-top: 30px;
+}
+
+@media (max-width: 500px) {
+  .news {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+
+}
+  .card {
+    box-shadow: 1px 1px 8px -4px #0000008a;
+    border-radius: 1rem;
+    overflow: hidden;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    color: black;
+  }
+
+  .card .content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    gap: 1rem;
+  }
+
+  .card img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+  }
+
+  .card .footer {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    padding: 0 1rem 1rem;
+  }
+
+  .card .btn__submit {
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    white-space: nowrap;
+  }
