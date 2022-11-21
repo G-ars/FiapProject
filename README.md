@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+# Trash Solution - Grand Finale
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto foi criado com o intuito de realizar a ativade "Cap 9 - Pode trazer a conta - Grand Finale".
 
-## Available Scripts
+O projeto consiste em uma página dinâmica, onde é possível fazer postagens com o intuito de vendas/doação de materiais reciclaveis, além de pontagens de conscientização ambiental, com a aplicação podemos também ficar por dentro das noticias a respeito à tecnologia.  
 
-In the project directory, you can run:
+Foi utilizado o ReactJs para o desenvolvimento da apliacação, além de utilizarmos o Firebase, ferramenta que nos permitiu ter acesso à uma API de Autenticação pelo Google e acesso ao Firestone Database, banco de dados que estamos salvando as informações dos Posts, para finalizar, consumimos uma API de noticias sobre tecnologia chamada Inshorts. 
+
+## Rodar o projeto
+
+Para rodar o projeto é bem simples, apenas faça clone do repositório em sua máquina. 
+
+Com o Node já instalado em seu PC (indico utilizar o Node 18), vamos rodar o comando "npm install" para baixar todas as dependencias do projeto em sua maquina.
+
+Ao realizarmos este passo, utilizaremos o comando a baixo:
 
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Abra [http://localhost:3000](http://localhost:3000) para ver a aplicação em seu browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Projeto no ar!! 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Fizemos o deploy do projeto na Vercel, entre agora e conheça nosso site: https://trash-solution.vercel.app/  :)
